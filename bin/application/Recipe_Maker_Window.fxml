@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.URL?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.Controller">
+  <children>
+    <AnchorPane id="Content" fx:id="anchorpane" focusTraversable="false" maxHeight="400.0" maxWidth="246.0" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="246.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0">
+      <children>
+        <ScrollPane id="ingredient_list" fx:id="scrollpane" focusTraversable="false" pannable="true" prefHeight="282.0" prefWidth="236.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="5.5" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="77.0">
+          <content>
+            <AnchorPane fx:id="ingredient_list" prefHeight="300.0" prefWidth="232.0" />
+          </content>
+        </ScrollPane>
+        <Button fx:id="build_recipes" mnemonicParsing="false" onAction="#make_recipes_btn" prefWidth="99.0" text="Make recipes" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="131.0" />
+        <Label prefWidth="118.0" text="Recipe List" textAlignment="CENTER" underline="false" wrapText="false" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="3.0">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+        <Button id="add_ingredient" fx:id="add_ingredientBtn" layoutX="190.0" layoutY="33.0" minWidth="25.0" mnemonicParsing="false" onAction="#addIngredient" prefHeight="35.0" prefWidth="48.0" text="Add" />
+        <Button fx:id="clear_ingredients" mnemonicParsing="false" onAction="#clear" text="Clear" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="11.0" />
+      </children>
+    </AnchorPane>
+    <BorderPane fx:id="display_content" prefHeight="396.0" prefWidth="354.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+      <center>
+        <Label prefWidth="370.0" text="Recipes not built yet" textFill="#dfdfdf" wrapText="false">
+          <font>
+            <Font name="AIGDT" size="40.0" />
+          </font>
+        </Label>
+      </center>
+    </BorderPane>
+  </children>
+</AnchorPane>
